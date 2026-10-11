@@ -2,6 +2,5 @@ flask
 pymysql
 cryptography
 python-dotenv
-google-genai
-werkzeug
 requests
+werkzeug
