@@ -7,14 +7,14 @@ Admin pastes a meeting transcript, Gemini extracts projects and tasks, and the a
 ## Setup
 ```bash
 pip install -r requirements.txt
-cp .env.example .env            # then fill in GEMINI_API_KEY and DB_PASSWORD
+cp .env.example .env            # then fill in API_KEY and DB_PASSWORD
 mysql -u root -p < schema.sql   # creates database and tables
 python seed.py                  # creates the 10 demo users (safe to re-run)
 python app.py                   # open http://127.0.0.1:5000
 ```
 
 ## Environment variables
-SECRET_KEY, GEMINI_API_KEY, GEMINI_MODEL, DB_HOST, DB_PORT, DB_USER, DB_PASSWORD, DB_NAME
+SECRET_KEY, API_KEY, AI_MODEL, DB_HOST, DB_PORT, DB_USER, DB_PASSWORD, DB_NAME
 
 ## Demo accounts (password for all: `Demo123!`)
 admin@novaworks.example, ayesha@ / bilal@ / hina@ (managers), ali@ / hamza@ / sara@ / usman@ / zain@ / maryam@ (agents), all `@novaworks.example`.
@@ -31,4 +31,4 @@ Login/logout, admin transcript conversion, validation with readable errors, all-
 No editing of projects/tasks, no signup or password reset (not required), demo credentials only.
 
 ## Deployment
-Not deployed. For extra marks: host the MySQL database (e.g. Aiven free MySQL), set the env variables on a host such as Render, and run with gunicorn app:app.
+Not deployed. 
