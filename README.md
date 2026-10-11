@@ -1,6 +1,6 @@
 <div align="center">
 
-# NovaWorks AI Project Manager
+# AI Project Manager
 
 **Paste a meeting transcript. Get projects, tasks, owners, deadlines and hours, saved and ready to use.**
 
